@@ -1,0 +1,11 @@
+﻿.footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: .875rem;
+}
+
+.social a {
+    margin-left: 1rem;
+    color: #dfceb0;
+}

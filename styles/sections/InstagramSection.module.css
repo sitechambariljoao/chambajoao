@@ -1,0 +1,37 @@
+﻿.section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #531010;
+}
+
+.text {
+    margin-bottom: 1.5rem;
+    color: #531010;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    background-color: #b02727;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+.instagram {
+    padding: 3rem 0;
+    background-color: #fff7e0;
+}
+
+.embed {
+    margin-top: 2rem;
+}

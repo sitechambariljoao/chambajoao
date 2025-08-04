@@ -1,0 +1,11 @@
+﻿.about {
+    padding: 3rem 0;
+}
+
+.quote {
+    display: inline-block;
+    background-color: #dfceb0;
+    padding: 1rem;
+    font-family: "Yeseva One", serif;
+    margin: 1.5rem 0;
+}

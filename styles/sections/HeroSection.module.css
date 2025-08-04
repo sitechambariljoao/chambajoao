@@ -1,0 +1,36 @@
+﻿.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.heroTitle {
+    font-family: "Yeseva One", serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b02727;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .heroImage {
+        display: none;
+    }
+}

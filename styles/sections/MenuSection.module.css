@@ -1,0 +1,48 @@
+﻿.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.menuCard {
+    background: white;
+    border: 2px solid #dfceb0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform .3s, box-shadow .3s;
+}
+
+    .menuCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+.menuImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menuInfo {
+    padding: 1rem;
+    text-align: center;
+}
+
+.menuTitle {
+    font-family: "Rufina", serif;
+    color: #b02727;
+    margin-bottom: .5rem;
+}
+
+.menuButton {
+    margin-top: 1rem;
+    background-color: #dfceb0;
+    color: #531010;
+}
+
+@media (max-width: 768px) {
+    .menuGrid {
+        grid-template-columns: 1fr;
+    }
+}
