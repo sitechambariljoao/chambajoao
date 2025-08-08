@@ -1,5 +1,21 @@
 ﻿.about {
-    padding: 3rem 0;
+    @apply grid grid-cols-2 items-center gap-8 py-16 h-screen relative overflow-hidden bg-[#fdf5e6];
+}
+
+.backgroundRustic {
+    @apply absolute inset-0 bg-contain bg-center opacity-5 pointer-events-none bg-no-repeat;
+    background-image: url('../../public/textura-papel-rustico2.png');
+}
+
+.watermarkCordel {
+    @apply absolute inset-0 bg-center bg-contain bg-no-repeat opacity-5 pointer-events-none;
+    background-image: url('../../public/silhueta-cordel.png');
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .quote {
@@ -8,4 +24,15 @@
     padding: 1rem;
     font-family: "Yeseva One", serif;
     margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .heroImage {
+        display: none;
+    }
 }

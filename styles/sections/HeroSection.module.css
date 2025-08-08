@@ -1,10 +1,11 @@
 ﻿.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
-    padding: 4rem 0;
+    @apply grid grid-cols-2 items-center gap-8 py-16 h-screen relative overflow-hidden bg-[#fdf5e6];
 }
+
+
+
+
+
 
 .heroTitle {
     font-family: "Yeseva One", serif;
@@ -13,24 +14,16 @@
     color: #b02727;
 }
 
+.content {
+    @apply relative mx-auto text-center;
+}
+
 .heroSubtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
 
-.heroImage {
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.title {
+    @apply relative z-10 font-serif text-5xl text-[#b02727];
 }
 
-@media (max-width: 768px) {
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .heroImage {
-        display: none;
-    }
-}
